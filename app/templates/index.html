@@ -8,5 +8,13 @@
     <title>Habari | Home of the latest news</title>
     {% endif %}
   </head>
-  <body></body>
+  <body>
+    <!-- US Articles section-->
+    <h3>US ARTICLES</h3>
+    <ul>
+      {%for us_articles in us%}
+          <li>{{us_articles.title}}</li>
+      {%endfor%}
+    </ul>
+  </body>
 </html>
