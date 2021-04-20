@@ -1,21 +1,18 @@
-{% import 'macros.html' as macro %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    {% if title %}
-    <title>{{ title }}</title>
-    {% else %}
-    <title>Habari | Home of the latest news</title>
-    {% endif %}
-  </head>
-  <body>
-    <!-- US Articles section-->
-    <h3>ALL SOURCES </h3>
-    <ul>
-      {% for source in sources %}
-          <li><a href="{{source.url}}">{{source.name}}</a></li>
-      {%endfor%}
-    </ul>
-  </body>
-</html>
+{%extends 'base.html'%}
+{% import 'macros.html' as macro %} 
+{% block content %}
+<!-- SOURCE AREA-->
+<div class="row">
+  {%for source in sources %}
+  <div class="col-sm-4">
+    <div class="card" style="background-color: bisque">
+      <div class="card-body">
+        <h3 class="card-title">{{source.name}}</h3>
+        <a href="{{source.url}}"target="_blank"class="btn btn-primary btn-block">View Site</a>
+        <a href="#" class="btn btn-success btn-block">View Articles</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{%endblock%}
