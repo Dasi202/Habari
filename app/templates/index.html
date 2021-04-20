@@ -1,3 +1,4 @@
+{% import 'macros.html' as macro %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,10 +11,10 @@
   </head>
   <body>
     <!-- US Articles section-->
-    <h3>US ARTICLES</h3>
+    <h3>ALL SOURCES </h3>
     <ul>
-      {%for us_articles in us%}
-          <li>{{us_articles.title}}</li>
+      {% for source in sources %}
+          <li><a href="{{source.url}}">{{source.name}}</a></li>
       {%endfor%}
     </ul>
   </body>
