@@ -19,8 +19,8 @@ A Flask application that consumes a news API and displays various articles on tr
 * CSS
 ## Known Bugs
 There are no known bugs so far
-## Support and contact details
-[mailto:](situmadanlon@gmail.com)
+## Contact details
+{mailto:}(situmadanlon@gmail.com)
 ### License
-*{MIT LICENSE}(https://opensource.org/licenses/MIT)
-Copyright (c) {2021} 
+* {MIT LICENSE}(https://opensource.org/licenses/MIT)
+* Copyright (c) {2021} 
