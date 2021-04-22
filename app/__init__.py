@@ -19,4 +19,6 @@ def format_datetime(value, format='medium'):
     elif format == 'medium':
         format = "EE dd.MM.y HH:mm"
     return babel.dates.format_datetime(value, format)
+
 from app import views
+from app import error
